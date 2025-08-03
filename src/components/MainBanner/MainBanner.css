@@ -1,0 +1,123 @@
+.main-banner {
+  position: relative;
+  min-height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  background: url('https://images.pexels.com/photos/2371977/pexels-photo-2371977.jpeg?cs=srgb&amp;dl=pexels-athena-2371977.jpg&amp;fm=jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding-top: 80px;
+  box-sizing: border-box;
+}
+
+.banner-content {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  max-width: 500px;
+  padding: 2rem 1.5rem 20px 17.5rem;
+  background-color: white;
+  border-radius: 0px 30px 0px 0px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.banner-heading {
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: #222;
+  margin-bottom: 1.5rem;
+}
+
+.banner-menu {
+  display: flex;
+  gap: 2rem;
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
+.banner-divider {
+  width: 100px;
+  height: 1px;
+  background: #ddd;
+  margin: 1.5rem 0;
+}
+
+.banner-title {
+  font-size: 2rem;
+  color: #222;
+  margin-bottom: 1rem;
+  line-height: 1.3;
+}
+
+.banner-subtitle {
+  font-size: 1.5rem;
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+
+.banner-description {
+  font-size: 1rem;
+  color: #777;
+  margin-bottom: 2rem;
+}
+
+.banner-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.banner-button {
+  padding: 0.8rem 2rem;
+  font-size: 0.9rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.banner-button.secondary {
+  background-color: transparent;
+  color: #007bff;
+  border: 1px solid #007bff;
+}
+
+.banner-button:hover {
+  background-color: #0056b3;
+}
+
+.banner-button.secondary:hover {
+  background-color: rgba(0, 123, 255, 0.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .banner-content {
+    max-width: 80%;
+    padding: 1.5rem;
+  }
+  
+  .banner-title {
+    font-size: 1.5rem;
+  }
+  
+  .banner-subtitle {
+    font-size: 1.2rem;
+  }
+  
+  .banner-actions {
+    flex-direction: column;
+  }
+  
+  .banner-button {
+    width: 100%;
+  }
+}
